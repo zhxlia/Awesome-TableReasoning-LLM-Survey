@@ -1,4 +1,4 @@
-# Awesome-TabelReasoning-LLM-Survey
+# Awesome-TableReasoning-LLM-Survey
 ![](https://img.shields.io/badge/Status-building-brightgreen) ![](https://img.shields.io/badge/PRs-Welcome-red)
 
 This repository contains a list of papers, datasets and leaderboards of the table reasoning task based on the Large Language Models (LLMs), which is carefully and comprehensively organized. 
