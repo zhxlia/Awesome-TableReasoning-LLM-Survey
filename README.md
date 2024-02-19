@@ -29,7 +29,7 @@ WikiTableQuestions serves as the initial benchmark in the table QA task, which h
     <td>Test-EM</td>
   </tr>
   <tr>
-    <td>PLM-sota</td>
+    <td>PLM-SOTA</td>
     <td><a href="https://arxiv.org/abs/2207.03637" target="_blank">OmniTab</a></td>
     <td>CMU + Microsoft Azure AI</td>
     <td>TAPEX (BART)</td>
@@ -96,7 +96,7 @@ WikiTableQuestions serves as the initial benchmark in the table QA task, which h
     <td>HKU</td>
     <td>code-davinci-002</td>
     <td>In-Domain</td>
-    <td>65</td>
+    <td>65.0</td>
     <td>64.6</td>
   </tr>
   <tr>
@@ -160,7 +160,7 @@ TabFact, as the first benchmark in the table fact verification task, features la
     <td>Test-Acc</td>
   </tr>
   <tr>
-    <td>PLM-sota</td>
+    <td>PLM-SOTA</td>
     <td><a href="https://arxiv.org/abs/2204.08753" target="_blank">LKA</a></td>
     <td>SEU</td>
     <td>DeBERTaV1</td>
@@ -344,7 +344,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>Test-EX</td>
   </tr>
   <tr>
-    <td>PLM-sota</td>
+    <td>PLM-SOTA</td>
     <td><a href="https://arxiv.org/abs/2302.05965" target="_blank">RESDSQL</a></td>
     <td>RUC</td>
     <td>RESDSQL-3B (T503B) + NatSQL</td>
