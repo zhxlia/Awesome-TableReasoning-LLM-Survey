@@ -3,7 +3,9 @@
 
 This repository contains a list of papers, datasets and leaderboards of the table reasoning task based on the Large Language Models (LLMs), which is carefully and comprehensively organized. If you found any error, please open an issue or pull request.
 
-For more details, please refer to the paper: <a href="https://arxiv.org/abs/2402.08259" target="_blank">A Survey of Table Reasoning with Large Language Models</a>
+For more details, please refer to the paper: <a href="https://arxiv.org/abs/2402.08259" target="_blank">A Survey of Table Reasoning with Large Language Models</a>, the overview of which is shown in the figure below.
+
+![Overview of our paper](./figures/overview.jpg)
 
 
 
