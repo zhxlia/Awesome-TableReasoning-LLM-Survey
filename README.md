@@ -22,7 +22,7 @@ WikiTableQuestions serves as the initial benchmark in the table QA task, which h
   <tr>
     <td>Type</td>
     <td>Method</td>
-    <td>Orgnization</td>
+    <td>Organization</td>
     <td>Model</td>
     <td>Setting</td>
     <td>Dev-EM</td>
@@ -155,7 +155,7 @@ TabFact, as the first benchmark in the table fact verification task, features la
   <tr>
     <td>Type</td>
     <td>Method</td>
-    <td>Orgnization</td>
+    <td>Organization</td>
     <td>Model</td>
     <td>Test-Acc</td>
   </tr>
@@ -241,7 +241,7 @@ FeTaQA requires the model to generate a free-form answer to the question, with l
   <tr>
     <td>Type</td>
     <td>Method</td>
-    <td>Orgnization</td>
+    <td>Organization</td>
     <td>Model</td>
     <td>Dev-BLEU</td>
     <td>Test-BLEU</td>
@@ -335,7 +335,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
   <tr>
     <td>Type</td>
     <td>Method</td>
-    <td>Orgnization</td>
+    <td>Organization</td>
     <td>Model</td>
     <td>Setting</td>
     <td>Dev-EM</td>
