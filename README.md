@@ -256,18 +256,6 @@ FeTaQA requires the model to generate a free-form answer to the question, with l
   </tr>
   <tr>
     <td rowspan="2" colspan="1">LLM-fine-tuned</td>
-    <td><a href="https://arxiv.org/pdf/2311.08896.pdf" target="_blank">HELLaMA</a></td>
-    <td>FDU</td>
-    <td>Llama-2-13B</td>
-    <td>-</td>
-    <td>34.18</td>
-    <td>0.67</td>
-    <td>0.45</td>
-    <td>0.57</td>
-    <td>-</td>
-    <td>23.11</td>
-  </tr>
-  <tr>
     <td><a href="https://arxiv.org/pdf/2311.09206.pdf" target="_blank">TableLlama</a></td>
     <td>OSU</td>
     <td>LongLoRA-7B(Llama-2-7B)</td>
@@ -280,17 +268,29 @@ FeTaQA requires the model to generate a free-form answer to the question, with l
     <td>23.11</td>
   </tr>
   <tr>
+    <td><a href="https://arxiv.org/pdf/2311.08896.pdf" target="_blank">HELLaMA</a></td>
+    <td>FDU</td>
+    <td>Llama-2-13B</td>
+    <td>-</td>
+    <td>34.18</td>
+    <td>0.67</td>
+    <td>0.45</td>
+    <td>0.57</td>
+    <td>-</td>
+    <td>23.11</td>
+  </tr>
+  <tr>
     <td rowspan="3" colspan="1">LLM-few-shot</td>
-    <td><a href="https://arxiv.org/abs/2301.13808" target="_blank">Dater</a></td>
-    <td>USTC & Alibaba Group</td>
+    <td><a href="https://arxiv.org/abs/2310.00815" target="_blank">ReAcTable</a></td>
+    <td>Microsoft</td>
     <td>code-davinci-002</td>
     <td>-</td>
-    <td>30.92</td>
-    <td>0.66</td>
-    <td>0.45</td>
-    <td>0.56</td>
-    <td>0.56</td>
-    <td>23.01</td>
+    <td>-</td>
+    <td>0.71</td>
+    <td>0.46</td>
+    <td>-</td>
+    <td>0.61</td>
+    <td>23.10</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/pdf/2401.04398.pdf" target="_blank">Chain-of-Table</a></td>
@@ -302,17 +302,19 @@ FeTaQA requires the model to generate a free-form answer to the question, with l
     <td>0.44</td>
     <td>0.56</td>
     <td>-</td>
+    <td>24.01</td>
   </tr>
   <tr>
-    <td><a href="https://arxiv.org/abs/2310.00815" target="_blank">ReAcTable</a></td>
-    <td>Microsoft</td>
+    <td><a href="https://arxiv.org/abs/2301.13808" target="_blank">Dater</a></td>
+    <td>USTC & Alibaba Group</td>
     <td>code-davinci-002</td>
     <td>-</td>
-    <td>-</td>
-    <td>0.71</td>
-    <td>0.46</td>
-    <td>-</td>
-    <td>0.61</td>
+    <td>30.92</td>
+    <td>0.66</td>
+    <td>0.45</td>
+    <td>0.56</td>
+    <td>0.56</td>
+    <td>23.01</td>
   </tr>
 </table>
 
@@ -337,6 +339,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>Dev-EX</td>
     <td>Test-EM</td>
     <td>Test-EX</td>
+    <td>Published Date</td>
   </tr>
   <tr>
     <td>PLM-SOTA</td>
@@ -348,19 +351,10 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>84.1</td>
     <td>72.0</td>
     <td>79.9</td>
+    <td>23.02</td>
   </tr>
   <tr>
     <td rowspan="2" colspan="1">LLM-fine-tuned</td>
-    <td><a href="https://arxiv.org/abs/2312.03463" target="_blank">DBCopilot</a></td>
-    <td>CAS</td>
-    <td>T5-base + gpt-3.5-turbo-16k-0613</td>
-    <td>Open-Domain @5</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>72.8</td>
-  </tr>
-  <tr>
     <td><a href="https://arxiv.org/abs/2312.17449" target="_blank">DB-GPT</a></td>
     <td>Ant Group</td>
     <td>QWEN-14B-CHAT-SFT</td>
@@ -369,63 +363,21 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>70.1</td>
     <td>-</td>
     <td>-</td>
+    <td>23.12</td>
+  </tr>
+  <tr>
+    <td><a href="https://arxiv.org/abs/2312.03463" target="_blank">DBCopilot</a></td>
+    <td>CAS</td>
+    <td>T5-base + gpt-3.5-turbo-16k-0613</td>
+    <td>Open-Domain @5</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>72.8</td>
+    <td>23.12</td>
   </tr>
   <tr>
     <td rowspan="18" colspan="1">LLM-few-shot</td>
-    <td><a href="https://arxiv.org/pdf/2311.01173" target="_blank">CRUSH</a></td>
-    <td>IIT Bombay</td>
-    <td>text-davinci-003 + RESDSQL-3B</td>
-    <td>Open-Domain @10</td>
-    <td>-</td>
-    <td>-</td>
-    <td>46.?</td>
-    <td>53.?</td>
-  </tr>
-  <tr>
-    <td rowspan="3" colspan="1"><a href="https://arxiv.org/abs/2312.11242" target="_blank">MAC-SQL</a></td>
-    <td rowspan="3" colspan="1">BUAA</td>
-    <td>SQL-Llama-7B</td>
-    <td>In-Domain</td>
-    <td>-</td>
-    <td>76.3</td>
-    <td>-</td>
-    <td>70.6</td>
-  </tr>
-  <tr>
-    <td>GPT-3.5-turbo</td>
-    <td>In-Domain</td>
-    <td>-</td>
-    <td>80.6</td>
-    <td>-</td>
-    <td>75.5</td>
-  </tr>
-  <tr>
-    <td>GPT4</td>
-    <td>In-Domain</td>
-    <td>-</td>
-    <td>86.8</td>
-    <td>-</td>
-    <td>82.8</td>
-  </tr>
-  <tr>
-    <td rowspan="2" colspan="1"><a href="https://arxiv.org/pdf/2304.11015.pdf" target="_blank">DIN-SQL</a></td>
-    <td rowspan="2" colspan="1">UofA</td>
-    <td>CodeX davinci</td>
-    <td>In-Domain</td>
-    <td>57.2</td>
-    <td>69.9</td>
-    <td>57.0</td>
-    <td>78.2</td>
-  </tr>
-  <tr>
-    <td>GPT-4</td>
-    <td>In-Domain</td>
-    <td>60.1</td>
-    <td>74.2</td>
-    <td>60.0</td>
-    <td>85.3</td>
-  </tr>
-  <tr>
     <td><a href="https://arxiv.org/abs/2308.15363" target="_blank">DAIL-SQL</a></td>
     <td>Alibaba Group</td>
     <td>GPT-4</td>
@@ -434,64 +386,51 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>83.5</td>
     <td>-</td>
     <td>86.6</td>
+    <td>23.08</td>
   </tr>
-  <tr>
-    <td><a href="https://arxiv.org/abs/2310.14687" target="_blank">Cao et al. [2023]</a></td>
-    <td>CMU</td>
-    <td>code-davinci-002</td>
-    <td>In-Domain</td>
-    <td>-</td>
-    <td>63.8</td>
-    <td>-</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td><a href="https://arxiv.org/abs/2311.02883" target="_blank">SQLPrompt</a></td>
-    <td>Cloud AI Research Team</td>
-    <td>PaLM FLAN 540B + PaLM62B + PaLM FLAN 62B</td>
-    <td>In-Domain</td>
-    <td>68.6</td>
-    <td>77.1</td>
-    <td>-</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td><a href="https://arxiv.org/abs/2305.09645" target="_blank">IRR</a></td>
-    <td>RUC</td>
-    <td>gpt-3.5-turbo </td>
-    <td>In-Domain</td>
-    <td>-</td>
-    <td>77.8</td>
-    <td>-</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td><a href="https://arxiv.org/abs/2302.08468" target="_blank">Lever</a></td>
-    <td>Yale & Meta AI</td>
-    <td>code-davinci-002</td>
-    <td>In-Domain</td>
-    <td>-</td>
-    <td>81.9</td>
-    <td>-</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td rowspan="2" colspan="1"><a href="https://arxiv.org/abs/2310.17342" target="_blank">Auto-CoT </a></td>
-    <td rowspan="2" colspan="1">SJTU</td>
-    <td>GPT-3.5-turbo</td>
-    <td>In-Domain</td>
-    <td>62.7</td>
-    <td>80.4</td>
-    <td>-</td>
-    <td>-</td>
-  </tr>
-  <tr>
+    <tr>
+    <td><a href="https://arxiv.org/pdf/2304.11015.pdf" target="_blank">DIN-SQL</a></td>
+    <td>UofA</td>
     <td>GPT-4</td>
     <td>In-Domain</td>
-    <td>61.7</td>
-    <td>82.9</td>
+    <td>60.1</td>
+    <td>74.2</td>
+    <td>60.0</td>
+    <td>85.3</td>
+    <td>23.04</td>
+  </tr>
+  <tr>
+    <td><a href="https://arxiv.org/abs/2312.11242" target="_blank">MAC-SQL</a></td>
+    <td>BUAA</td>
+    <td>GPT4</td>
+    <td>In-Domain</td>
+    <td>-</td>
+    <td>86.8</td>
+    <td>-</td>
+    <td>82.8</td>
+    <td>23.12</td>
+  </tr>
+  <tr>
+    <td><a href="https://arxiv.org/pdf/2311.01173" target="_blank">CRUSH</a></td>
+    <td>IIT Bombay</td>
+    <td>text-davinci-003 + RESDSQL-3B</td>
+    <td>Open-Domain @10</td>
     <td>-</td>
     <td>-</td>
+    <td>46.?</td>
+    <td>53.?</td>
+    <td>23.11</td>
+  </tr>
+  <tr>
+    <td><a href="https://arxiv.org/abs/2310.06302" target="_blank">ODIS</a></td>
+    <td>OSU</td>
+    <td>code-davinci-002</td>
+    <td>In-Domain</td>
+    <td>-</td>
+    <td>85.2</td>
+    <td>-</td>
+    <td>-</td>
+    <td>23.10</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/abs/2401.02115" target="_blank">Re-rank</a></td>
@@ -502,32 +441,62 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>84.5</td>
     <td>-</td>
     <td>-</td>
+    <td>24.01</td>
   </tr>
   <tr>
-    <td rowspan="3" colspan="1"><a href="https://arxiv.org/abs/2310.06302" target="_blank">ODIS</a></td>
-    <td rowspan="3" colspan="1">OSU</td>
-    <td>CodeLlama-34B-instruct</td>
+    <td><a href="https://arxiv.org/abs/2310.17342" target="_blank">Auto-CoT </a></td>
+    <td>SJTU</td>
+    <td>GPT-4</td>
     <td>In-Domain</td>
+    <td>61.7</td>
+    <td>82.9</td>
     <td>-</td>
-    <td>80.0</td>
     <td>-</td>
-    <td>-</td>
+    <td>23.10</td>
   </tr>
   <tr>
-    <td>gpt-3.5-turbo-16k-0613 </td>
-    <td>In-Domain</td>
-    <td>-</td>
-    <td>81.5</td>
-    <td>-</td>
-    <td>-</td>
-  </tr>
-  <tr>
+    <td><a href="https://arxiv.org/abs/2302.08468" target="_blank">Lever</a></td>
+    <td>Yale & Meta AI</td>
     <td>code-davinci-002</td>
     <td>In-Domain</td>
     <td>-</td>
-    <td>85.2</td>
+    <td>81.9</td>
     <td>-</td>
     <td>-</td>
+    <td>23.02</td>
+  </tr>
+  <tr>
+    <td><a href="https://arxiv.org/abs/2305.09645" target="_blank">IRR</a></td>
+    <td>RUC</td>
+    <td>gpt-3.5-turbo </td>
+    <td>In-Domain</td>
+    <td>-</td>
+    <td>77.8</td>
+    <td>-</td>
+    <td>-</td>
+    <td>23.05</td>
+  </tr>
+  <tr>
+    <td><a href="https://arxiv.org/abs/2311.02883" target="_blank">SQLPrompt</a></td>
+    <td>Cloud AI Research Team</td>
+    <td>PaLM FLAN 540B + PaLM62B + PaLM FLAN 62B</td>
+    <td>In-Domain</td>
+    <td>68.6</td>
+    <td>77.1</td>
+    <td>-</td>
+    <td>-</td>
+    <td>23.11</td>
+  </tr>
+  <tr>
+    <td><a href="https://arxiv.org/abs/2310.14687" target="_blank">Cao et al. [2023]</a></td>
+    <td>CMU</td>
+    <td>code-davinci-002</td>
+    <td>In-Domain</td>
+    <td>-</td>
+    <td>63.8</td>
+    <td>-</td>
+    <td>-</td>
+    <td>23.10</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/abs/2312.09039" target="_blank">TAP4LLM</a></td>
@@ -538,6 +507,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>-</td>
     <td>-</td>
     <td>-</td>
+    <td>23.12</td>
   </tr>
 </table>
 
