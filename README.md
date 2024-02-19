@@ -336,7 +336,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>Type</td>
     <td>Method</td>
     <td>Orgnization</td>
-    <td>Modal</td>
+    <td>Model</td>
     <td>Setting</td>
     <td>Dev-EM</td>
     <td>Dev-EX</td>
