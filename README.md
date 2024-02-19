@@ -351,7 +351,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>In-Domain</td>
     <td>80.5</td>
     <td>84.1</td>
-    <td>72</td>
+    <td>72.0</td>
     <td>79.9</td>
   </tr>
   <tr>
@@ -419,7 +419,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>In-Domain</td>
     <td>57.2</td>
     <td>69.9</td>
-    <td>57</td>
+    <td>57.0</td>
     <td>78.2</td>
   </tr>
   <tr>
@@ -427,7 +427,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>In-Domain</td>
     <td>60.1</td>
     <td>74.2</td>
-    <td>60</td>
+    <td>60.0</td>
     <td>85.3</td>
   </tr>
   <tr>
@@ -514,7 +514,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>CodeLlama-34B-instruct</td>
     <td>In-Domain</td>
     <td>-</td>
-    <td>80</td>
+    <td>80.0</td>
     <td>-</td>
     <td>-</td>
   </tr>
@@ -539,10 +539,9 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>Microsoft</td>
     <td>gpt-3.5-turbo</td>
     <td>In-Domain</td>
-    <td>82.45 (?)</td>
+    <td>82.5</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
   </tr>
 </table>
-
