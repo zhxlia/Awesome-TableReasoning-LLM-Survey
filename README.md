@@ -16,7 +16,12 @@ Recent research has shown that LLMs exhibit compelling performance across NLP ta
 Considering the high annotation and training overheads of table reasoning, there has been a lot of work on applying LLMs to table reasoning tasks to reduce the overheads, which has become the current mainstream method.
 
 ## Benchmarks and Leaderboard
-
+In this part, we present leadboards of currect mainstream benchmarks of table reasoning with LLMs.
+Each benchmark is ordered by the performance.
+**Type** denotes the reasoning types:
+* PLM-SOTA: the best performance of small-scale PLMs;
+* LLM-fine-tuned: fine-tuning LLMs;
+* LLM-few-shot: inference using LLMs with few-shot.
 
 ### <a href="https://ppasupat.github.io/WikiTableQuestions/" target="_blank">WikiTableQuestions</a>
 WikiTableQuestions serves as the initial benchmark in the table QA task, which has open-domain tables accompanied by complex questions.
@@ -25,14 +30,14 @@ WikiTableQuestions serves as the initial benchmark in the table QA task, which h
     <td align=center rowspan="1" colspan="7"><a href="https://ppasupat.github.io/WikiTableQuestions/" target="_blank">WikiTableQuestions</a></td>
   </tr> -->
   <tr>
-    <td>Type</td>
-    <td>Method</td>
-    <td>Organization</td>
-    <td>Model</td>
-    <td>Setting</td>
-    <td>Dev-EM</td>
-    <td>Test-EM</td>
-    <td>Published Date</td>
+    <th>Type</th>
+    <th>Method</th>
+    <th>Organization</th>
+    <th>Model</th>
+    <th>Setting</th>
+    <th>Dev-EM</th>
+    <th>Test-EM</th>
+    <th>Published Date</th>
   </tr>
   <tr>
     <td>PLM-SOTA</td>
@@ -42,7 +47,7 @@ WikiTableQuestions serves as the initial benchmark in the table QA task, which h
     <td>In-Domain</td>
     <td>-</td>
     <td>62.8</td>
-    <td>22.07</td>
+    <td>2022.07</td>
   </tr>
   <tr>
     <td>LLM-fine-tuned</td>
@@ -52,7 +57,7 @@ WikiTableQuestions serves as the initial benchmark in the table QA task, which h
     <td>In-Domain</td>
     <td>-</td>
     <td>31.6</td>
-    <td>23.11</td>
+    <td>2023.11</td>
   </tr>
   <tr>
     <td rowspan="13" colspan="1">LLM-few-shot</td>
@@ -62,7 +67,7 @@ WikiTableQuestions serves as the initial benchmark in the table QA task, which h
     <td>In-Domain</td>
     <td>-</td>
     <td>68.0</td>
-    <td>23.10</td>
+    <td>2023.10</td>
   </tr>
     <tr>
     <td><a href="https://arxiv.org/pdf/2401.04398.pdf" target="_blank">Chain-of-Table</a></td>
@@ -71,7 +76,7 @@ WikiTableQuestions serves as the initial benchmark in the table QA task, which h
     <td>In-Domain</td>
     <td>-</td>
     <td>67.3</td>
-    <td>24.01</td>
+    <td>2024.01</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/abs/2301.13808" target="_blank">Dater</a></td>
@@ -80,7 +85,7 @@ WikiTableQuestions serves as the initial benchmark in the table QA task, which h
     <td>In-Domain</td>
     <td>64.8</td>
     <td>65.9</td>
-    <td>23.01</td>
+    <td>2023.01</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/abs/2302.08468" target="_blank">Lever</a></td>
@@ -89,7 +94,7 @@ WikiTableQuestions serves as the initial benchmark in the table QA task, which h
     <td>In-Domain</td>
     <td>64.6</td>
     <td>65.8</td>
-    <td>23.02</td>
+    <td>2023.02</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/abs/2210.02875" target="_blank">Binder</a></td>
@@ -98,7 +103,7 @@ WikiTableQuestions serves as the initial benchmark in the table QA task, which h
     <td>In-Domain</td>
     <td>65.0</td>
     <td>64.6</td>
-    <td>22.10</td>
+    <td>2022.10</td>
   </tr>
   <tr>
     <td><a href="https://openreview.net/forum?id=Qa0ULgosc9" target="_blank">OpenTab                                                        </a></td>
@@ -107,7 +112,7 @@ WikiTableQuestions serves as the initial benchmark in the table QA task, which h
     <td>Open-Domain</td>
     <td>-</td>
     <td>64.1</td>
-    <td>24.01</td>
+    <td>2024.01</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/abs/2305.09645" target="_blank">IRR</a></td>
@@ -116,7 +121,7 @@ WikiTableQuestions serves as the initial benchmark in the table QA task, which h
     <td>In-Domain</td>
     <td>-</td>
     <td>57.0</td>
-    <td>23.05</td>
+    <td>2023.05</td>
   </tr>
 
   <tr>
@@ -126,7 +131,7 @@ WikiTableQuestions serves as the initial benchmark in the table QA task, which h
     <td>In-Domain</td>
     <td>-</td>
     <td>48.8</td>
-    <td>22.10</td>
+    <td>2022.10</td>
   </tr>
   <tr>
   <td><a href="https://arxiv.org/abs/2310.14687" target="_blank">Cao et al. [2023]</a></td>
@@ -135,7 +140,7 @@ WikiTableQuestions serves as the initial benchmark in the table QA task, which h
     <td>In-Domain</td>
     <td>-</td>
     <td>42.4</td>
-    <td>23.10</td>
+    <td>2023.10</td>
   </tr>
 </table>
 
@@ -147,12 +152,12 @@ TabFact, as the first benchmark in the table fact verification task, features la
     <td align=center rowspan="1" colspan="5"><a href="https://tabfact.github.io/" target="_blank">TabFact</a></td>
   </tr> -->
   <tr>
-    <td>Type</td>
-    <td>Method</td>
-    <td>Organization</td>
-    <td>Model</td>
-    <td>Test-Acc</td>
-    <td>Published Date</td>
+    <th>Type</th>
+    <th>Method</th>
+    <th>Organization</th>
+    <th>Model</th>
+    <th>Test-Acc</th>
+    <th>Published Date</th>
   </tr>
   <tr>
     <td>PLM-SOTA</td>
@@ -160,7 +165,7 @@ TabFact, as the first benchmark in the table fact verification task, features la
     <td>SEU</td>
     <td>DeBERTaV1</td>
     <td>84.9</td>
-    <td>22.04</td>
+    <td>2022.04</td>
   </tr>
   <tr>
     <td>LLM-fine-tuned</td>
@@ -168,7 +173,7 @@ TabFact, as the first benchmark in the table fact verification task, features la
     <td>OSU</td>
     <td>LongLoRA-7B(Llama-2-7B)</td>
     <td>82.6</td>
-    <td>23.11</td>
+    <td>2023.11</td>
   </tr>
   <tr>
     <td rowspan="10" colspan="1">LLM-few-shot</td>
@@ -176,49 +181,49 @@ TabFact, as the first benchmark in the table fact verification task, features la
     <td>USTC & Alibaba Group</td>
     <td>code-davinci-002</td>
     <td>93.0</td>
-    <td>23.01</td>
+    <td>2023.01</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/abs/2305.09645" target="_blank">IRR</a></td>
     <td>RUC</td>
     <td>gpt-3.5-turbo</td>
     <td>87.6</td>
-    <td>23.05</td>
+    <td>2023.05</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/pdf/2401.04398.pdf" target="_blank">Chain-of-Table</a></td>
     <td>Google</td>
     <td>PaLM 2-S</td>
     <td>86.6</td>
-    <td>24.01</td>
+    <td>2024.01</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/abs/2310.00815" target="_blank">ReAcTable</a></td>
     <td>Microsoft</td>
     <td>code-davinci-002</td>
     <td>86.1</td>
-    <td>23.10</td>
+    <td>2023.10</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/abs/2210.02875" target="_blank">Binder</a></td>
     <td>HKU</td>
     <td>code-davinci-002</td>
     <td>86.0</td>
-    <td>22.10</td>
+    <td>2022.10</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/abs/2210.06710" target="_blank">Chen [2023]</a></td>
     <td>UW</td>
     <td>code-davinci-002</td>
     <td>78.8</td>
-    <td>22.10</td>
+    <td>2022.10</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/abs/2312.09039" target="_blank">TAP4LLM</a></td>
     <td>Microsoft</td>
     <td>gpt-3.5-turbo</td>
     <td>62.7</td>
-    <td>23.12</td>
+    <td>2023.12</td>
   </tr>
 </table>
 
@@ -231,17 +236,17 @@ FeTaQA requires the model to generate a free-form answer to the question, with l
     <td align=center rowspan="1" colspan="10"><a href="https://github.com/Yale-LILY/FeTaQA" target="_blank">FeTaQA</a></td>
   </tr> -->
   <tr>
-    <td>Type</td>
-    <td>Method</td>
-    <td>Organization</td>
-    <td>Model</td>
-    <td>Dev-BLEU</td>
-    <td>Test-BLEU</td>
-    <td>Test-ROUGE-1</td>
-    <td>Test-ROUGE-2</td>
-    <td>Test-ROUGE-3</td>
-    <td>Test-ROUGE-L</td>
-    <td>Published Date</td>
+    <th>Type</th>
+    <th>Method</th>
+    <th>Organization</th>
+    <th>Model</th>
+    <th>Dev-BLEU</th>
+    <th>Test-BLEU</th>
+    <th>Test-ROUGE-1</th>
+    <th>Test-ROUGE-2</th>
+    <th>Test-ROUGE-3</th>
+    <th>Test-ROUGE-L</th>
+    <th>Published Date</th>
   </tr>
   <tr>
     <td>PLM-SOTA</td>
@@ -254,7 +259,7 @@ FeTaQA requires the model to generate a free-form answer to the question, with l
     <td>0.43</td>
     <td>-</td>
     <td>0.55</td>
-    <td>22.01</td>
+    <td>2022.01</td>
   </tr>
   <tr>
     <td rowspan="2" colspan="1">LLM-fine-tuned</td>
@@ -267,7 +272,7 @@ FeTaQA requires the model to generate a free-form answer to the question, with l
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>23.11</td>
+    <td>2023.11</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/pdf/2311.08896.pdf" target="_blank">HELLaMA</a></td>
@@ -279,7 +284,7 @@ FeTaQA requires the model to generate a free-form answer to the question, with l
     <td>0.45</td>
     <td>0.57</td>
     <td>-</td>
-    <td>23.11</td>
+    <td>2023.11</td>
   </tr>
   <tr>
     <td rowspan="3" colspan="1">LLM-few-shot</td>
@@ -292,7 +297,7 @@ FeTaQA requires the model to generate a free-form answer to the question, with l
     <td>0.46</td>
     <td>-</td>
     <td>0.61</td>
-    <td>23.10</td>
+    <td>2023.10</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/pdf/2401.04398.pdf" target="_blank">Chain-of-Table</a></td>
@@ -304,7 +309,7 @@ FeTaQA requires the model to generate a free-form answer to the question, with l
     <td>0.44</td>
     <td>0.56</td>
     <td>-</td>
-    <td>24.01</td>
+    <td>2024.01</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/abs/2301.13808" target="_blank">Dater</a></td>
@@ -316,7 +321,7 @@ FeTaQA requires the model to generate a free-form answer to the question, with l
     <td>0.45</td>
     <td>0.56</td>
     <td>0.56</td>
-    <td>23.01</td>
+    <td>2023.01</td>
   </tr>
 </table>
 
@@ -332,16 +337,16 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     </td> -->
   </tr>
   <tr>
-    <td>Type</td>
-    <td>Method</td>
-    <td>Organization</td>
-    <td>Model</td>
-    <td>Setting</td>
-    <td>Dev-EM</td>
-    <td>Dev-EX</td>
-    <td>Test-EM</td>
-    <td>Test-EX</td>
-    <td>Published Date</td>
+    <th>Type</th>
+    <th>Method</th>
+    <th>Organization</th>
+    <th>Model</th>
+    <th>Setting</th>
+    <th>Dev-EM</th>
+    <th>Dev-EX</th>
+    <th>Test-EM</th>
+    <th>Test-EX</th>
+    <th>Published Date</th>
   </tr>
   <tr>
     <td>PLM-SOTA</td>
@@ -353,7 +358,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>84.1</td>
     <td>72.0</td>
     <td>79.9</td>
-    <td>23.02</td>
+    <td>2023.02</td>
   </tr>
   <tr>
     <td rowspan="2" colspan="1">LLM-fine-tuned</td>
@@ -365,7 +370,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>70.1</td>
     <td>-</td>
     <td>-</td>
-    <td>23.12</td>
+    <td>2023.12</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/abs/2312.03463" target="_blank">DBCopilot</a></td>
@@ -376,7 +381,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>-</td>
     <td>-</td>
     <td>72.8</td>
-    <td>23.12</td>
+    <td>2023.12</td>
   </tr>
   <tr>
     <td rowspan="18" colspan="1">LLM-few-shot</td>
@@ -388,7 +393,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>83.5</td>
     <td>-</td>
     <td>86.6</td>
-    <td>23.08</td>
+    <td>2023.08</td>
   </tr>
     <tr>
     <td><a href="https://arxiv.org/pdf/2304.11015.pdf" target="_blank">DIN-SQL</a></td>
@@ -399,7 +404,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>74.2</td>
     <td>60.0</td>
     <td>85.3</td>
-    <td>23.04</td>
+    <td>2023.04</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/abs/2312.11242" target="_blank">MAC-SQL</a></td>
@@ -410,7 +415,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>86.8</td>
     <td>-</td>
     <td>82.8</td>
-    <td>23.12</td>
+    <td>2023.12</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/pdf/2311.01173" target="_blank">CRUSH</a></td>
@@ -421,7 +426,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>-</td>
     <td>46.?</td>
     <td>53.?</td>
-    <td>23.11</td>
+    <td>2023.11</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/abs/2310.06302" target="_blank">ODIS</a></td>
@@ -432,7 +437,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>85.2</td>
     <td>-</td>
     <td>-</td>
-    <td>23.10</td>
+    <td>2023.10</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/abs/2401.02115" target="_blank">Re-rank</a></td>
@@ -443,7 +448,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>84.5</td>
     <td>-</td>
     <td>-</td>
-    <td>24.01</td>
+    <td>2024.01</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/abs/2310.17342" target="_blank">Auto-CoT </a></td>
@@ -454,7 +459,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>82.9</td>
     <td>-</td>
     <td>-</td>
-    <td>23.10</td>
+    <td>2023.10</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/abs/2302.08468" target="_blank">Lever</a></td>
@@ -465,7 +470,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>81.9</td>
     <td>-</td>
     <td>-</td>
-    <td>23.02</td>
+    <td>2023.02</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/abs/2305.09645" target="_blank">IRR</a></td>
@@ -476,7 +481,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>77.8</td>
     <td>-</td>
     <td>-</td>
-    <td>23.05</td>
+    <td>2023.05</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/abs/2311.02883" target="_blank">SQLPrompt</a></td>
@@ -487,7 +492,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>77.1</td>
     <td>-</td>
     <td>-</td>
-    <td>23.11</td>
+    <td>2023.11</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/abs/2310.14687" target="_blank">Cao et al. [2023]</a></td>
@@ -498,7 +503,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>63.8</td>
     <td>-</td>
     <td>-</td>
-    <td>23.10</td>
+    <td>2023.10</td>
   </tr>
   <tr>
     <td><a href="https://arxiv.org/abs/2312.09039" target="_blank">TAP4LLM</a></td>
@@ -509,7 +514,7 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
     <td>-</td>
     <td>-</td>
     <td>-</td>
-    <td>23.12</td>
+    <td>2023.12</td>
   </tr>
 </table>
 
