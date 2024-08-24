@@ -523,12 +523,10 @@ Spider is the first multi-domain, multi-table benchmark on the text-to-SQL task.
 If you find our survey helpful, please cite as following:
 
 ```
-@misc{zhang2024survey,
-      title={A Survey of Table Reasoning with Large Language Models}, 
-      author={Xuanliang Zhang and Dingzirui Wang and Longxu Dou and Qingfu Zhu and Wanxiang Che},
-      year={2024},
-      eprint={2402.08259},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@article{zhang2024survey,
+  title={A Survey of Table Reasoning with Large Language Models},
+  author={Zhang, Xuanliang and Wang, Dingzirui and Dou, Longxu and Zhu, Qingfu and Che, Wanxiang},
+  journal={arXiv preprint arXiv:2402.08259},
+  year={2024}
 }
 ```
